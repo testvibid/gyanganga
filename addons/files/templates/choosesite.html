@@ -7,9 +7,9 @@
             </div>
             <ion-item class="item item-thumbnail-left" ng-repeat="site in sites track by $index" ng-click="uploadInSite(site.id)">
                 <img ng-src="{{site.avatar}}">
-                <h2>f/t choose site</h2>
-                <p><mm-format-text clean="true" watch="true">f/t choose site</mm-format-text></p>
-                <p>f/t choose site</p>
+              <h2>{{site.fullname}}</h2>
+                <p><mm-format-text clean="true" watch="true">{{site.sitename}}</mm-format-text></p>
+                <p>{{site.siteurl}}</p>
             </ion-item>
         </div>
     </ion-content>
