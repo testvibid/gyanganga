@@ -32,7 +32,7 @@
                     <p class="item-heading">{{ instance.name }}</p>
                     <button class="button button-block" ng-click="enrol(instance.id, enroldata.password)">{{ 'mm.courses.enrolme' | translate }}</button>
                 </div>
-                <div class="item item-text-wrap" ng-if="!isEnrolled && paypalEnabled">
+                <div class="item item-text-wrap">
                     <p class="item-heading ">{{ 'mm.courses.paypalaccepted' | translate }}</p>
                     <p>{{ 'mm.core.paymentinstant' | translate }}</p>
                     <button class="button button-block" ng-click="paypalEnrol()">{{ 'mm.courses.sendpaymentbutton' | translate }}</button>
