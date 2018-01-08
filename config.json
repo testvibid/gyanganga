@@ -1,7 +1,7 @@
 {
-    "app_id" : "edu.ptt.moodle",
-    "appname": "PTT Mobile",
-    "desktopappname": "PTT Desktop",
+    "app_id" : "com.gyangangadvd.elearning",
+    "appname": "GyanGanga Education Mobile",
+    "desktopappname": "GyanGanga Education Desktop",
     "versioncode" : "2021",
     "versionname" : "3.4.0",
     "cache_expiration_time" : 300000,
