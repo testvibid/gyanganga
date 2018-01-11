@@ -7,13 +7,11 @@
         </ion-refresher>
         <mm-loading hide-until="settingsLoaded">
             <form name="signupForm" class="list list-inset" ng-if="settings" novalidate="">
-                <div class="item item-text-wrap text-center">
-                    <!-- If no sitename show big siteurl. -->
+              <!--  <div class="item item-text-wrap text-center">
                     <p ng-if="!sitename" class="item-heading padding">{{siteurl}}</p>
-                    <!-- If sitename, show big sitename and small siteurl. -->
                     <p ng-if="sitename" class="item-heading padding">{{sitename}}</p>
                     <p ng-if="sitename">{{siteurl}}</p>
-                </div>
+                </div> -->
                 <!-- Username and password. -->
                 <div class="item item-divider item-text-wrap">
                     {{ 'mm.login.createuserandpass' | translate }}
