@@ -10422,7 +10422,7 @@ a.button {
   color: inherit; }
 
 .bar-content .icon, .bar-side-menu .icon {
-  color: #ffffff; }
+  color: #2b1375; }
 
 .item-delete .button.icon,
 .item-delete .button.icon.active,
@@ -10587,7 +10587,7 @@ a.button {
   font-size: 115%; }
 
 .item-stacked-label {
-  background-color: #ffffff; }
+  background-color: #2b1375; }
 
 .item-stacked-label .input-label, .item-checkbox .input-label {
   max-width: 100%;
@@ -10597,15 +10597,15 @@ a.button {
   border-color: transparent;
   background-color: #dfe509;
   background-image: linear-gradient(0deg, transparent, transparent 50%, transparent 50%);
-  color: #ffffff; }
+  color: #2b1375; }
   .bar-content .title {
-    color: #ffffff; }
+    color: #2b1375; }
   .bar-content .button {
     border-color: transparent;
     background-color: #dfe509;
-    color: #ffffff; }
+    color: #2b1375; }
     .bar-content .button:hover {
-      color: #ffffff;
+      color: #2b1375;
       text-decoration: none; }
     .bar-content .button.active, .bar-content .button.activated {
       border-color: transparent;
@@ -10614,7 +10614,7 @@ a.button {
       border-color: transparent;
       background: none;
       box-shadow: none;
-      color: #ffffff;
+      color: #2b1375;
       font-size: 17px; }
     .bar-content .button.button-icon {
       border-color: transparent;
@@ -13239,10 +13239,10 @@ li.mm-question-answer-incorrect,
   border-color: transparent;
   background-color: #dfe509;
   background-image: linear-gradient(0deg, transparent, transparent 50%, transparent 50%);
-  color: #ffffff;
+  color: #2b1375;
   height: 80px !important; }
   .bar-side-menu .title {
-    color: #ffffff; }
+    color: #2b1375; }
   .bar-side-menu .item, .bar-side-menu .mm-grades-table .itemcenter, .mm-grades-table .bar-side-menu .itemcenter {
     background: transparent;
     border: none; }
@@ -13257,7 +13257,7 @@ li.mm-question-answer-incorrect,
     .bar-side-menu .item-media .icon,
     .bar-side-menu .item-avatar-center .icon,
     .bar-side-menu .item-progress .icon {
-      color: #ffffff; }
+      color: #2b1375; }
 
 .has-side-menu-header {
   top: 80px; }
