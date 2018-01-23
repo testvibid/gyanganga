@@ -698,6 +698,7 @@
     "mm.login.username": "Username",
     "mm.login.usernameoremail": "Enter either username or email address",
     "mm.login.usernamerequired": "Username required",
+    "mm.login.cityrequired": "Missing City/town",
     "mm.login.usernotaddederror": "User not added - error",
     "mm.login.visitchangepassword": "Do you want to visit the site to change the password?",
     "mm.login.webservicesnotenabled": "Web services are not enabled in your site. Please contact your site administrator if you think they should be enabled.",
