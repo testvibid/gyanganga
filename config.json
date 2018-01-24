@@ -2,7 +2,7 @@
     "app_id" : "com.gyangangadvd.elearning",
     "appname": "GyanGanga Education Mobile",
     "desktopappname": "GyanGanga Education Desktop",
-    "versioncode" : "2021",
+    "versioncode" : "20211",
     "versionname" : "1.0.0",
     "cache_expiration_time" : 300000,
     "default_lang" : "en",
