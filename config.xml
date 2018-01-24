@@ -4,7 +4,7 @@
         xmlns:android = "http://schemas.android.com/apk/res/android"
         id        = "com.gyangangadvd.elearning"
         versionCode = "20210"
-        version   = "3.4.0">
+        version   = "1.0.0">
     <name>GyanGanga</name>
 
     <description>
