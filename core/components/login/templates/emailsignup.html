@@ -15,11 +15,11 @@
                 </div> -->
                 <!-- Username and password. -->
                 <div class="item item-divider item-text-wrap">
-                    {{ 'mm.login.createuserandpass' | translate }}
+                    <b> {{ 'mm.login.createuserandpass' | translate }} </b>
                 </div>
                 <ion-input class="item item-input item-stacked-label item-text-wrap" mm-input-errors error-messages="usernameErrors">
                     <ion-label mm-mark-required="true">{{ 'mm.login.username' | translate }}</ion-label>
-                    <input type="text" name="username" placeholder="{{ 'mm.login.username' | translate }}" ng-model="data.username" autocapitalize="none" autocorrect="off" required>
+                    <input type="text" name="username" placeholder="{{ 'mm.login.username' | translate }}" ng-model="data.username" autocapitalize="none" autocorrect="off" autocomplete="off" required>
                 </ion-input>
                 <ion-input class="item item-input item-stacked-label item-text-wrap" mm-input-errors error-messages="passwordErrors">
                     <ion-label mm-mark-required="true">{{ 'mm.login.password' | translate }}</ion-label>
@@ -29,7 +29,7 @@
                     </p>
                 </ion-input>
                 <!-- More details. -->
-                <div class="item item-divider item-text-wrap">{{ 'mm.login.supplyinfo' | translate }}</div>
+                <div class="item item-divider item-text-wrap"> <b>{{ 'mm.login.supplyinfo' | translate }} </b></div>
                  <ion-input ng-repeat="namefield in settings.namefields track by $index" class="item item-input item-stacked-label item-text-wrap" mm-input-errors field-name="{{namefield}}" error-messages="namefieldsErrors[namefield]">
                     <ion-label mm-mark-required="true">{{ 'mm.user.' + namefield | translate }}</ion-label>
                     <input type="text" name="{{namefield}}" placeholder="{{ 'mm.user.' + namefield | translate }}" ng-model="data[namefield]" autocorrect="off" required>
@@ -55,7 +55,7 @@
                 </ion-input>
                 <!-- Other categories. -->
                 <div ng-repeat="category in categories">
-                    <div class="item item-divider item-text-wrap">{{ category.name }}</div>
+                    <div class="item item-divider item-text-wrap"> <b>{{ category.name }} </b></div>
                     <mm-user-profile-field ng-repeat="field in category.fields" field="field" edit="true" signup="true" register-auth="email" model="data" scroll-handle="mmLoginEmailSignupScroll"></mm-user-profile-field>
                 </div>
                 <!-- ReCAPTCHA -->
