@@ -579,7 +579,7 @@
     "mm.courses.searchcoursesadvice": "You can use the search courses button to find courses to access as a  guest or enrol yourself in courses that allow it.",
     "mm.courses.selfenrolment": "Self enrolment",
     "mm.courses.sendpaymentbutton": "Send payment via PayPal",
-    "mm.courses.sendpaymentbuttonccavenue": "Send payment via CCAvenue",
+    "mm.courses.sendpaymentbuttonccavenue": "Send Payment via CCAvenue",
     "mm.courses.totalcoursesearchresults": "Total courses: {{$a}}",
     "mm.fileuploader.addfiletext": "Add file",
     "mm.fileuploader.audio": "Audio",
@@ -1574,5 +1574,6 @@
     "mma.notifications.playsound": "Play sound",
     "mma.notifications.therearentnotificationsyet": "There are no notifications.",
     "mma.participants.noparticipants": "No participants found for this course.",
-    "mma.participants.participants": "Participants"
+    "mma.participants.participants": "Participants",
+    "mm.user.customlogintext": "custom login text"
 }
