@@ -18,11 +18,10 @@
                     <b> {{ 'mm.login.createuserandpass' | translate }} </b>
                 </div>
                 <ion-input class="item item-input item-stacked-label item-text-wrap" mm-input-errors error-messages="usernameErrors">
-                 <div> <ion-label mm-mark-required="true"><span style="font-size:18px">{{ 'mm.login.username' | translate }}</span> </ion-label>
-					 <span style="margin-left:15px;position:absolute;left:20%;">{{ 'mm.user.usernamecustom' | translate }} </span> </div>
-                    <input type="text" name="username" placeholder="{{ 'mm.login.username' | translate }}" ng-model="data.username" ng-trim="false" 
-					ng-change="data.username = data.username.split(' ').join('')" autocapitalize="none" autocorrect="off" autocomplete="off" required>
+                    <div> <ion-label mm-mark-required="true"><span style="font-size:18px">{{ 'mm.login.username' | translate }}</span> </ion-label>  <span style="margin-left:15px;position:absolute;left:20%;">{{ 'mm.user.usernamecustom' | translate }} </span></div>
+                    <input type="text" name="username" placeholder="{{ 'mm.login.username' | translate }}" ng-model="data.username" ng-trim="false" autocapitalize="none" autocorrect="off" ng-trim="false"  ng-change="data.username = data.username.split(' ').join('')" autocomplete="off" required>
                 </ion-input>
+		    
                 <ion-input class="item item-input item-stacked-label item-text-wrap" mm-input-errors error-messages="passwordErrors">
                     <ion-label mm-mark-required="true"><span style="font-size:18px">{{ 'mm.login.password' | translate }}</span></ion-label>
                     <input id="mm-login-emailsignup-password-input" type="password" name="password" placeholder="{{ 'mm.login.password' | translate }}" ng-model="data.password" required mm-show-password>
