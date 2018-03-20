@@ -5,6 +5,11 @@
 </div>
 <!-- Edit. -->
 <ion-input ng-if="edit && field && field.shortname" class="item item-input item-stacked-label item-text-wrap" mm-input-errors field-name="{{field.modelName}}">
-    <ion-label mm-mark-required="{{field.required}}">{{ field.name }}</ion-label>
-    <input type="{{field.inputType}}" name="{{field.modelName}}" placeholder="{{field.name}}" ng-model="model[field.modelName]" ng-disabled="!signup && field.locked" maxlength="{{field.maxlength}}" ng-required="{{field.required}}">
+    <ion-label mm-mark-required="{{field.required}}"><span style="font-size:18px">{{ field.name }}</span></ion-label>
+    <div ng-if="field.shortname == 'mobile'">
+    <input type="{{field.inputType}}" name="{{field.modelName}}" placeholder="{{field.name}}" ng-model="model[field.modelName]" ng-disabled="!signup && field.locked" maxlength="{{field.maxlength}}" minlength="5" ng-required="{{field.required}}">
+    </div>
+    <div ng-if="field.shortname != 'mobile'">
+        <input type="{{field.inputType}}" name="{{field.modelName}}" placeholder="{{field.name}}" ng-model="model[field.modelName]" ng-disabled="!signup && field.locked" maxlength="{{field.maxlength}}"  ng-required="{{field.required}}">
+    </div>
 </ion-input>
