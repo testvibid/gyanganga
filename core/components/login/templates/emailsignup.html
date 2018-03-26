@@ -20,12 +20,12 @@
                
 		    <ion-input class="item item-input item-stacked-label item-text-wrap" style="padding-top:7px" mm-input-errors error-messages="usernameErrors">
                     <ion-label mm-mark-required="true"><span style="font-size:18px">{{ 'mm.login.username' | translate }}</span></ion-label>
-                    <input type="text" name="username" placeholder="{{ 'mm.login.username' | translate }}" ng-model="data.username" ng-trim="false" autocapitalize="none" autocorrect="off" ng-trim="false"  ng-change="data.username = data.username.split(' ').join('')" autocomplete="off" required>
+                    <input type="text" name="username" style="font-size:15px;" placeholder="{{ 'mm.login.username' | translate }}" ng-model="data.username" ng-trim="false" autocapitalize="none" autocorrect="off" ng-trim="false"  ng-change="data.username = data.username.split(' ').join('')" autocomplete="off" required>
                 </ion-input>
 		    
                 <ion-input class="item item-input item-stacked-label item-text-wrap" style="padding-top:7px" mm-input-errors error-messages="passwordErrors">
                     <ion-label mm-mark-required="true"><span style="font-size:18px">{{ 'mm.login.password' | translate }}</span></ion-label>
-                    <input id="mm-login-emailsignup-password-input" type="password" name="password" placeholder="{{ 'mm.login.password' | translate }}" ng-model="data.password" required mm-show-password>
+                    <input id="mm-login-emailsignup-password-input" style="font-size:15px;" type="password" name="password" placeholder="{{ 'mm.login.password' | translate }}" ng-model="data.password" required mm-show-password>
                     <p ng-if="settings.passwordpolicy" class="mm-input-footnote">
                         {{settings.passwordpolicy}}
                     </p>
@@ -34,12 +34,12 @@
                 <div class="item item-divider item-text-wrap"> <b>{{ 'mm.login.supplyinfo' | translate }} </b></div>
                  <ion-input ng-repeat="namefield in settings.namefields track by $index" style="padding-top:7px" class="item item-input item-stacked-label item-text-wrap" mm-input-errors field-name="{{namefield}}" error-messages="namefieldsErrors[namefield]">
                     <ion-label mm-mark-required="true"><span style="font-size:18px">{{ 'mm.user.' + namefield | translate }}</span></ion-label>
-                    <input type="text" name="{{namefield}}" placeholder="{{ 'mm.user.' + namefield | translate }}" ng-model="data[namefield]" autocorrect="off" required>
+                    <input type="text" name="{{namefield}}" style="font-size:15px;" placeholder="{{ 'mm.user.' + namefield | translate }}" ng-model="data[namefield]" autocorrect="off" required>
                 </ion-input>
                 <ion-input class="item item-input item-stacked-label item-text-wrap" style="padding-top:7px" mm-input-errors error-messages="emailErrors">
                     <ion-label mm-mark-required="true"><span style="font-size:18px">{{ 'mm.user.email' | translate }}</span></ion-label>
                      <p>* {{ 'mm.user.emailinstruction' | translate }} </p>
-                    <input type="email" name="email" placeholder="{{ 'mm.user.email' | translate }}" ng-model="data.email" autocapitalize="none" autocorrect="off"  ng-change="data.email = data.email.split(' ').join('')" autocomplete="off" required>
+                    <input type="email" name="email" style="font-size:15px;" placeholder="{{ 'mm.user.email' | translate }}" ng-model="data.email" autocapitalize="none" autocorrect="off"  ng-change="data.email = data.email.split(' ').join('')" autocomplete="off" required>
                 </ion-input>
                 <!--<ion-input class="item item-input item-stacked-label item-text-wrap" mm-input-errors error-messages="email2Errors">
                     <ion-label mm-mark-required="true">{{ 'mm.user.emailagain' | translate }}</ion-label>
@@ -47,7 +47,7 @@
                 </ion-input>-->
                 <ion-input class="item item-input item-stacked-label item-text-wrap" style="padding-top:7px"  mm-input-errors error-messages="cityErrors">
                     <ion-label mm-mark-required="true"><span style="font-size:18px">{{ 'mm.user.city' | translate }}</span></ion-label>
-                    <input type="text" name="city" placeholder="{{ 'mm.user.city' | translate }}" ng-model="data.city" autocorrect="off" required>
+                    <input type="text" name="city" style="font-size:15px;" placeholder="{{ 'mm.user.city' | translate }}" ng-model="data.city" autocorrect="off" required>
                 </ion-input>
                 <ion-input class="item item-select" style="padding-top:7px">
                     <ion-label id="mm-login-signup-country">{{ 'mm.user.country' | translate }}</ion-label>
