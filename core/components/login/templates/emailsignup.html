@@ -39,7 +39,7 @@
                 <ion-input class="item item-input item-stacked-label item-text-wrap" style="padding-top:7px" mm-input-errors error-messages="emailErrors">
                     <ion-label mm-mark-required="true"><span style="font-size:18px">{{ 'mm.user.email' | translate }}</span></ion-label>
                      <p>* {{ 'mm.user.emailinstruction' | translate }} </p>
-                    <input type="email" name="email" style="font-size:15px;" placeholder="{{ 'mm.user.email' | translate }}" ng-model="data.email" autocapitalize="none" autocorrect="off"  ng-change="data.email = data.email.split(' ').join('')" autocomplete="off" required>
+                    <input type="email" name="email" style="font-size:15px;" placeholder="{{ 'mm.user.email' | translate }}" ng-model="data.email" autocapitalize="none" autocorrect="off"  ng-trim="false" ng-change="data.email = data.email.split(' ').join('')" autocomplete="off" required>
                 </ion-input>
                 <!--<ion-input class="item item-input item-stacked-label item-text-wrap" mm-input-errors error-messages="email2Errors">
                     <ion-label mm-mark-required="true">{{ 'mm.user.emailagain' | translate }}</ion-label>
