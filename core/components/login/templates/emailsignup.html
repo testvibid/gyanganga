@@ -15,7 +15,7 @@
                 </div> -->
                 <!-- Username and password. -->
                 <div class="item item-divider item-text-wrap">
-                    <b> {{ 'mm.login.createuserandpass' | translate }} </b>
+                    <b style="font-size:17px;"> {{ 'mm.login.createuserandpass' | translate }} </b>
                 </div>
                
 		    <ion-input class="item item-input item-stacked-label item-text-wrap" style="padding-top:7px;padding-bottom:6px;" mm-input-errors error-messages="usernameErrors">
@@ -31,7 +31,7 @@
                     </p>
                 </ion-input>
                 <!-- More details. -->
-                <div class="item item-divider item-text-wrap"> <b>{{ 'mm.login.supplyinfo' | translate }} </b></div>
+                <div class="item item-divider item-text-wrap"> <b style="font-size:17px;">{{ 'mm.login.supplyinfo' | translate }} </b></div>
                  <ion-input ng-repeat="namefield in settings.namefields track by $index" style="padding-top:7px;padding-bottom:6px;" class="item item-input item-stacked-label item-text-wrap" mm-input-errors field-name="{{namefield}}" error-messages="namefieldsErrors[namefield]">
                     <ion-label mm-mark-required="true"><span style="font-size:18px">{{ 'mm.user.' + namefield | translate }}</span></ion-label>
                     <input type="text" name="{{namefield}}" style="font-size:17px;" placeholder="{{ 'mm.user.' + namefield | translate }}" ng-model="data[namefield]" autocorrect="off" required>
@@ -57,7 +57,7 @@
                 </ion-input>
                 <!-- Other categories. -->
                 <div ng-repeat="category in categories">
-                    <div class="item item-divider item-text-wrap"> <b>{{ category.name }} </b></div>
+                    <div class="item item-divider item-text-wrap"> <b style="font-size:17px;">{{ category.name }} </b></div>
                     <mm-user-profile-field ng-repeat="field in category.fields" field="field" edit="true" signup="true" register-auth="email" model="data" scroll-handle="mmLoginEmailSignupScroll"></mm-user-profile-field>
                 </div>
                 <!-- ReCAPTCHA -->
@@ -88,7 +88,7 @@
                 <!-- Submit button. -->
                 <div class="item padding">
                      <p style="color:#cb3d4d">* {{ 'mm.login.requiredfieldsignup' | translate }} </p>
-                    <button class="button button-block button-positive" ng-click="create(signupForm)">{{ 'mm.login.createaccount' | translate }}</button>
+                    <button class="button button-block button-positive" ng-click="create(signupForm)"> <b style="font-size:18px;">{{ 'mm.login.createaccount' | translate }}</b></button>
                 </div>
             </form>
         </mm-loading>
